@@ -10428,7 +10428,7 @@
                     var total = capacityCost + totalCCost;
                     $('#cost').text(numberWithCommas(total));
                 }else{
-                    $.get("http:scrape.cryrs.org/go.php?start=" + $('#start').find(":selected").text() + "&end=" + $('#end').find(":selected").text(), function(data){
+                    $.get("http://scrape.cryrs.org/go.php?start=" + $('#start').find(":selected").text() + "&end=" + $('#end').find(":selected").text(), function(data){
                         var jumps = occurrences(data, '<tr>') - 1;
                         console.log(jumps);
                         if(jumps > 0){
